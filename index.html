@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WapNation — Agencia de desarrollo web, automatización inteligente y performance marketing en Antofagasta, Chile.">
+    <meta name="author" content="WapNation">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wapnation.cl/">
+    <meta property="og:title" content="WapNation | Sistemas Inteligentes & Performance">
+    <meta property="og:description" content="Diseñamos software, automatizamos operaciones y ejecutamos campañas de alto rendimiento. Antofagasta, Chile.">
+    <meta property="og:image" content="https://wapnation.cl/img/og-cover.jpg">
+    <meta property="og:locale" content="es_CL">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WapNation | Sistemas Inteligentes & Performance">
+    <meta name="twitter:description" content="Diseñamos software, automatizamos operaciones y ejecutamos campañas de alto rendimiento.">
+    <meta name="twitter:image" content="https://wapnation.cl/img/og-cover.jpg">
+
+    <title>WapNation | Sistemas Inteligentes & Performance — Antofagasta</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 12L10 28L16 18L20 28L26 18L30 28L36 12' stroke='%2300e5ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' rx='8' fill='%23080a0f'/%3E%3Cpath d='M4 12L10 28L16 18L20 28L26 18L30 28L36 12' stroke='%2300e5ff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <svg viewBox="0 0 40 40" fill="none" class="prel-logo">
+            <path class="plogo-path" d="M4 10 L12 30 L20 15 L28 30 L36 10" stroke="url(#prel_grad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+                <linearGradient id="prel_grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3b82f6"/>
+                    <stop offset="1" stop-color="#2563eb"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+
+    <!-- BACKGROUND WATERMARK CYBERPUNK -->
+    <div class="site-watermark">
+        <svg viewBox="0 0 40 40" fill="none">
+            <!-- Glitch Cyan -->
+            <path d="M4.5 9.5 L12.5 29.5 L20.5 14.5 L28.5 29.5 L36.5 9.5" stroke="#0ff" stroke-width="2" stroke-linejoin="bevel" opacity="0.8"/>
+            <!-- Glitch Magenta -->
+            <path d="M3.2 10.8 L11.2 30.8 L19.2 15.8 L27.2 30.8 L35.2 10.8" stroke="#f0f" stroke-width="2" stroke-linejoin="bevel" opacity="0.8"/>
+            <!-- Main Bold Path -->
+            <path d="M4 10 L12 30 L20 15 L28 30 L36 10" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-container left-burger">
+            <button id="mobile-toggle" class="mobile-toggle always-visible" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <a href="#inicio" class="nav-logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none">
+                        <path d="M4 12L10 28L16 18L20 28L26 18L30 28L36 12" stroke="url(#lg1)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="lg1" x1="4" y1="12" x2="36" y2="28">
+                                <stop offset="0%" stop-color="#00f0ff"/>
+                                <stop offset="100%" stop-color="#7b2ff7"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">Wap<span class="logo-accent">Nation</span></span>
+            </a>
+            <div class="nav-links push-right">
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#sobre-mi" class="nav-link">Nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="https://wa.me/56936907136" target="_blank" class="nav-cta">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Hablemos
+                </a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#servicios" class="mobile-link">Servicios</a>
+            <a href="#proyectos" class="mobile-link">Proyectos</a>
+            <a href="#sobre-mi" class="mobile-link">Sobre mí</a>
+            <a href="#contacto" class="mobile-link">Contacto</a>
+            <a href="https://wa.me/56936907136" target="_blank" class="mobile-cta">Escribir por WhatsApp</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-particles" id="particles"></div>
+
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-dot"></span>
+                <span>Antofagasta, Chile</span>
+            </div>
+
+            <h1 class="hero-title">
+                Sistemas <span class="gradient-text">Inteligentes</span>.<br>
+                Creamos software y explotamos datos.
+            </h1>
+
+            <p class="hero-subtitle">
+                Diseñamos aplicaciones web, automatizamos operaciones críticas, creamos bots de IA y ejecutamos campañas de performance marketing. Soluciones ágiles con escalabilidad garantizada.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#proyectos" class="btn-primary">
+                    Ver proyectos reales
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contacto" class="btn-ghost">Cotizar</a>
+            </div>
+
+            <div class="hero-chips">
+                <span class="chip">Python</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">DeepSeek API</span>
+                <span class="chip">Alexa SDK</span>
+                <span class="chip">Streamlit</span>
+                <span class="chip">Binance API</span>
+                <span class="chip">Vue.js</span>
+        </div>
+        <div class="scroll-hint">↓ scroll</div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section services">
+        <div class="container">
+            <div class="section-label">// lo que hacemos</div>
+            <h2 class="section-title">Nuestros Servicios</h2>
+
+            <div class="services-grid">
+
+                <div class="scard" data-index="0">
+                    <div class="scard-index">01</div>
+                    <div class="scard-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><rect x="2" y="4" width="28" height="20" rx="2" stroke="currentColor" stroke-width="1.8"/><line x1="2" y1="10" x2="30" y2="10" stroke="currentColor" stroke-width="1.8"/><circle cx="5.5" cy="7" r="1.2" fill="#ff5f57"/><circle cx="9" cy="7" r="1.2" fill="#febc2e"/><circle cx="12.5" cy="7" r="1.2" fill="#28c840"/><rect x="6" y="14" width="10" height="2" rx="1" fill="currentColor" opacity="0.4"/><rect x="6" y="18" width="20" height="1.5" rx="0.75" fill="currentColor" opacity="0.2"/><line x1="16" y1="24" x2="16" y2="29" stroke="currentColor" stroke-width="1.8"/><line x1="10" y1="29" x2="22" y2="29" stroke="currentColor" stroke-width="1.8"/></svg>
+                    </div>
+                    <div class="scard-content">
+                        <h3>Landing Pages Web</h3>
+                        <p>Sitios web de alto perfil que generan tracción. Diseño desde cero, rendimiento extremo y SEO técnico optimizado. Nada de templates genéricos.</p>
+                        <div class="scard-tags">
+                            <span>HTML/CSS</span><span>React</span><span>Next.js</span><span>SEO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scard featured" data-index="1">
+                    <div class="scard-badge">ventaja competitiva</div>
+                    <div class="scard-index">02</div>
+                    <div class="scard-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><path d="M2 24L8 18L14 21L20 13L26 16L30 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="18" r="1.5" fill="currentColor"/><circle cx="14" cy="21" r="1.5" fill="currentColor"/><circle cx="20" cy="13" r="1.5" fill="currentColor"/><circle cx="26" cy="16" r="1.5" fill="currentColor"/><line x1="2" y1="29" x2="30" y2="29" stroke="currentColor" stroke-width="1" opacity="0.3"/></svg>
+                    </div>
+                    <div class="scard-content">
+                        <h3>Inteligencia de Licitaciones</h3>
+                        <p>Utilizamos nuestro monitor algorítmico privado para detectar licitaciones rentables del Estado antes que tu competencia. Te entregamos las oportunidades exactas para que tu empresa postule primero y gane contratos.</p>
+                        <div class="scard-tags">
+                            <span>Data Mining</span><span>ChileCompra</span><span>B2B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scard featured" data-index="2">
+                    <div class="scard-badge">Performance ROI</div>
+                    <div class="scard-index">03</div>
+                    <div class="scard-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><path d="M5 26h22M16 4l-9 14h18L16 4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="scard-content">
+                        <h3>Marketing & Publicidad</h3>
+                        <p>Campañas de alto rendimiento en Meta Ads (FB/IG) y Google Ads orientadas puramente a retorno de inversión para escalar las ventas y el flujo de clientes de tu empresa.</p>
+                        <div class="scard-tags">
+                            <span>Meta Ads</span><span>Google Ads</span><span>Scaling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scard" data-index="3">
+                    <div class="scard-index">04</div>
+                    <div class="scard-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><rect x="6" y="4" width="22" height="26" rx="3" stroke="currentColor" stroke-width="1.8"/><rect x="9" y="8" width="14" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5" opacity="0.5"/><rect x="9" y="19" width="4" height="3" rx="0.75" fill="currentColor" opacity="0.4"/><rect x="15" y="19" width="4" height="3" rx="0.75" fill="currentColor" opacity="0.4"/><rect x="21" y="19" width="4" height="3" rx="0.75" fill="currentColor" opacity="0.6"/><rect x="9" y="24" width="4" height="3" rx="0.75" fill="currentColor" opacity="0.3"/><rect x="15" y="24" width="4" height="3" rx="0.75" fill="currentColor" opacity="0.3"/><rect x="21" y="24" width="4" height="3" rx="0.75" fill="currentColor" opacity="0.5"/></svg>
+                    </div>
+                    <div class="scard-content">
+                        <h3>Pos & Apps Móviles</h3>
+                        <p>Diseño de sistemas de Punto de Venta integrales y Aplicaciones Móviles nativas (Google Play / App Store). Desarrollo a medida enfocado en acelerar la operativa de tu negocio.</p>
+                        <div class="scard-tags">
+                            <span>C# / Node</span><span>React Native</span><span>Vue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scard" data-index="4">
+                    <div class="scard-index">05</div>
+                    <div class="scard-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="10" stroke="currentColor" stroke-width="1.8" stroke-dasharray="3 1.5"/><circle cx="16" cy="16" r="5" stroke="currentColor" stroke-width="1.8"/><circle cx="16" cy="16" r="2" fill="currentColor"/><line x1="16" y1="3" x2="16" y2="6" stroke="currentColor" stroke-width="1.8"/><line x1="16" y1="26" x2="16" y2="29" stroke="currentColor" stroke-width="1.8"/><line x1="3" y1="16" x2="6" y2="16" stroke="currentColor" stroke-width="1.8"/><line x1="26" y1="16" x2="29" y2="16" stroke="currentColor" stroke-width="1.8"/></svg>
+                    </div>
+                    <div class="scard-content">
+                        <h3>Asistentes IA + Alexa</h3>
+                        <p>Configuramos inteligencias en la nube conectadas directo a agentes como Amazon Alexa o chatbots. Desde asistentes empresariales hasta plataformas interactivas de consumo.</p>
+                        <div class="scard-tags">
+                            <span>Alexa SDK</span><span>DeepSeek</span><span>OpenAI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scard" data-index="5">
+                    <div class="scard-index">06</div>
+                    <div class="scard-icon">
+                        <svg viewBox="0 0 32 32" fill="none"><polyline points="10,9 3,16 10,23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,9 29,16 22,23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="19" y1="5" x2="13" y2="27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="scard-content">
+                        <h3>Automatización & Bots</h3>
+                        <p>Integramos tu negocio: creamos puentes entre APIs, desplegamos bots de trading financieros y automatizamos cualquier flujo operativo lento para que se ejecute 100% solo sin errores 24/7.</p>
+                        <div class="scard-tags">
+                            <span>Python</span><span>REST APIs</span><span>Trading Bots</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section projects">
+        <div class="container">
+            <div class="section-label">// nuestros proyectos</div>
+            <h2 class="section-title">Lo que hemos construido</h2>
+
+            <div class="projects-list">
+
+                <!-- Proyecto 1: Ojo del Pueblo -->
+                <div class="project-item reveal">
+                    <div class="project-meta">
+                        <span class="proj-status live">● en producción</span>
+                        <span class="proj-lang">Python · Streamlit · SQLite</span>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-text">
+                            <h3>Ojo del Pueblo</h3>
+                            <p class="proj-tagline">Fiscalización ciudadana de compras del Estado de Chile.</p>
+                            <p class="proj-desc">Extrae órdenes de compra de Mercado Público vía API ChileCompra, las procesa y detecta anomalías estadísticas usando Benford's Law, Z-score e IQR. Cruza proveedores con donaciones SERVEL, datos de DIPRES, InfoLobby y datos.gob.cl. Tiene un asistente IA integrado (DeepSeek) que responde consultas sobre los datos reales de la BD. 89 tests automatizados.</p>
+                            <div class="proj-links">
+                                <a href="https://github.com/WAPNATION23/monitor-compras-chile" target="_blank" class="proj-link-gh">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    github.com/WAPNATION23
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-visual">
+                            <img src="img/dashboard.jpg" alt="Dashboard de Ojo del Pueblo" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Alexa Skill -->
+                <div class="project-item reveal">
+                    <div class="project-meta">
+                        <span class="proj-status live">● 220 usuarios</span>
+                        <span class="proj-lang">Alexa SDK · DeepSeek · Node.js</span>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-text">
+                            <h3>Skill de Amazon Alexa</h3>
+                            <p class="proj-tagline">Lo que Alexa no puede responder, lo manejamos nosotros.</p>
+                            <p class="proj-desc">Skill publicada en la tienda de Amazon. Usa DeepSeek como LLM para dar respuestas que Alexa sola no puede generar. Tiene modos de juego: verdad o reto, historias interactivas, trivia. 220 usuarios que lo han probado desde el lanzamiento. Unos 6–10 activos al día, que para ser un proyecto experimental y sin publicidad no está nada mal.</p>
+                        </div>
+                        <div class="project-visual">
+                            <img src="img/echo-pop.jpg" alt="Amazon Echo Pop con Alexa" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: Trading -->
+                <div class="project-item reveal">
+                    <div class="project-meta">
+                        <span class="proj-status wip">● corriendo</span>
+                        <span class="proj-lang">Python · Binance API · Polymarket</span>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-text">
+                            <h3>Bots de Trading Algorítmico</h3>
+                            <p class="proj-tagline">Un bot en crypto, otro en predicciones, ambos en producción.</p>
+                            <p class="proj-desc">Bot en Binance que opera pares de crypto con estrategias cuantitativas. Bot en Polymarket que usa modelos predictivos combinando análisis de sentimiento (NLP sobre texto) para pronóstico financiero. Gestión de riesgo integrada en v2.</p>
+                        </div>
+                        <div class="project-visual" style="display: flex; flex-direction: column; background: #0b0e11; overflow: hidden; border: 1px solid var(--border);">
+                            <!-- Binance Half -->
+                            <div style="flex: 1; padding: 20px 24px; border-bottom: 1px solid #2b3139; display: flex; align-items: center; justify-content: space-between;">
+                                <div>
+                                    <div style="color: #fcd535; font-size: 1.15rem; font-weight: 800; font-family: sans-serif; letter-spacing: -0.5px; display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fcd535"><path d="M12 2l4.8 4.8-1.7 1.7L12 5.4 8.9 8.5 7.2 6.8 12 2zm6.5 6.5L24 14l-5.5 5.5-1.7-1.7L20.6 14l-3.8-3.8 1.7-1.7zM0 14l5.5-5.5 1.7 1.7L3.4 14l3.8 3.8-1.7 1.7L0 14zm12 10.5l-4.8-4.8 1.7-1.7 3.1 3.1 3.1-3.1 1.7 1.7L12 24.5zm0-14.7l-4.1 4.1 4.1 4.1 4.1-4.1-4.1-4.1z"/></svg>
+                                        BINANCE
+                                    </div>
+                                    <div style="color: #848e9c; font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; margin-top: 4px;">quant_strategy_v2.py</div>
+                                </div>
+                                <div style="text-align: right;">
+                                    <div style="color: #0ecb81; font-weight: bold; font-family: 'JetBrains Mono', monospace; font-size: 1.1rem;">+2.18%</div>
+                                    <div style="color: #EAECEF; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace;">ETH/USDT</div>
+                                </div>
+                            </div>
+                            <!-- Polymarket Half -->
+                            <div style="flex: 1; padding: 20px 24px; background: #ffffff; display: flex; align-items: center; justify-content: space-between;">
+                                <div>
+                                    <div style="color: #000; font-size: 1.15rem; font-weight: 900; font-family: 'Inter', sans-serif; letter-spacing: -0.8px; display: flex; align-items: center; gap: 8px;">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#000"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 18.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/></svg>
+                                        POLYMARKET
+                                    </div>
+                                    <div style="color: #666; font-size: 0.72rem; font-family: 'JetBrains Mono', monospace; margin-top: 4px;">Oráculo NLP Agent</div>
+                                </div>
+                                <div style="text-align: right;">
+                                    <div style="color: #27ae60; font-weight: bold; font-family: 'JetBrains Mono', monospace; font-size: 1.1rem;">81¢ <span style="font-size:0.7rem">Yes</span></div>
+                                    <div style="color: #333; font-size: 0.75rem; max-width: 140px; line-height: 1.2;">Fed rate cut before July 2026?</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4: Punto de Venta -->
+                <div class="project-item reveal">
+                    <div class="project-meta">
+                        <span class="proj-status live">● en producción</span>
+                        <span class="proj-lang">C# · React / Vue</span>
+                    </div>
+                    <div class="project-main">
+                        <div class="project-text">
+                            <h3>Sistema de Punto de Venta</h3>
+                            <p class="proj-tagline">Solución POS integral para puntos de venta chilenos.</p>
+                            <p class="proj-desc">Sistema de facturación, inventario y control de caja que puede adaptarse a cualquier local comercial en Chile o Latinoamérica. Desarrollado con tecnologías rápidas y un backend potente, puedes probar la versión en vivo directamente en la web.</p>
+                            <div class="proj-links">
+                                <a href="https://pos-chile-13.web.app" target="_blank" class="proj-link-gh">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                                    pos-chile-13.web.app
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-visual">
+                            <img src="img/pos.jpg" alt="Terminal Punto de Venta y app web" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5: Drift.fm -->
+                <div class="project-item reveal">
+                    <div class="project-meta">
+                        <span class="proj-status wip">● en desarrollo</span>
+                        <span class="proj-lang">App Móvil · OBD2 · I.A.</span>
+                    </div>
+                    <div class="project-main" style="grid-template-columns: 1fr;">
+                        <div class="project-text">
+                            <h3>Drift.fm</h3>
+                            <p class="proj-tagline">Conectividad inteligente para entusiastas del motor.</p>
+                            <p class="proj-desc">Aplicación móvil que se conecta al puerto OBD2 del auto para hacer lecturas en tiempo real impulsadas por inteligencia artificial. Cuenta con reproductor de música integrado y un "social crew" (estilo Autolog) que dispone de un mapa en vivo donde ves a otras personas en ruta para organizar meets y caravanas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6: Sincro -->
+                <div class="project-item reveal">
+                    <div class="project-meta">
+                        <span class="proj-status wip">● en desarrollo</span>
+                        <span class="proj-lang">App Móvil · iOS / Android</span>
+                    </div>
+                    <div class="project-main" style="grid-template-columns: 1fr;">
+                        <div class="project-text">
+                            <h3>Sincro</h3>
+                            <p class="proj-tagline">Sincroniza y fortalece el trabajo en equipo de tu relación.</p>
+                            <p class="proj-desc">Aplicación nativa diseñada específicamente para mejorar la comunicación, organización y la dinámica de las parejas mediante agendas compartidas y gamificación.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-mi" class="section about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <div class="section-label">// nuestra agencia</div>
+                    <h2 class="section-title">WapNation</h2>
+                    <p>Somos una agencia boutique de tecnología basada en Antofagasta, enfocada en resultados accionables. Trabajamos con Python, inteligencia artificial y stacks modernos (React/Node) para construir soluciones técnicas reales y rápidas.</p>
+                    <p>Desarrollamos de principio a fin sistemas transaccionales, dashboards corporativos, aplicaciones móviles y estrategias de marketing B2B/B2C, operando como tu propio departamento de innovación.</p>
+
+                    <div class="about-links">
+                        <a href="https://github.com/WAPNATION23" target="_blank" class="alink">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            @WAPNATION23
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-stack">
+                    <div class="stack-label">// stack actual</div>
+                    <div class="stack-items">
+                        <div class="stack-row">
+                            <span class="stack-cat">Backend</span>
+                            <div class="stack-tags">
+                                <span>Python</span><span>Node.js</span><span>C#</span><span>FastAPI</span>
+                            </div>
+                        </div>
+                        <div class="stack-row">
+                            <span class="stack-cat">Frontend</span>
+                            <div class="stack-tags">
+                                <span>React</span><span>Vue.js</span><span>Next.js</span><span>HTML/CSS</span>
+                            </div>
+                        </div>
+                        <div class="stack-row">
+                            <span class="stack-cat">Data</span>
+                            <div class="stack-tags">
+                                <span>SQLite</span><span>SQL Server</span><span>Streamlit</span><span>Pandas</span>
+                            </div>
+                        </div>
+                        <div class="stack-row">
+                            <span class="stack-cat">IA</span>
+                            <div class="stack-tags">
+                                <span>DeepSeek API</span><span>Alexa SDK</span><span>scikit-learn</span>
+                            </div>
+                        </div>
+                        <div class="stack-row">
+                            <span class="stack-cat">DevOps</span>
+                            <div class="stack-tags">
+                                <span>Docker</span><span>GitHub Actions</span><span>AWS Lambda</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÉTRICAS -->
+    <section class="section metrics">
+        <div class="container">
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <span class="metric-number">6+</span>
+                    <span class="metric-label">Proyectos en producción</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">220</span>
+                    <span class="metric-label">Usuarios Alexa Skill</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">89</span>
+                    <span class="metric-label">Tests automatizados</span>
+                </div>
+                <div class="metric-item">
+                    <span class="metric-number">24/7</span>
+                    <span class="metric-label">Bots operando</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <div class="contact-inner">
+                <div class="contact-text">
+                    <div class="section-label">// contacto</div>
+                    <h2 class="section-title">¿Tienes algo<br>en mente?</h2>
+                    <p>Cuéntanos qué necesitas. Si podemos ayudarte, lo hacemos. Si no es lo nuestro, te lo decimos altiro. Respondemos el mismo día.</p>
+
+                    <div class="contact-options">
+                        <a href="https://wa.me/56936907136" target="_blank" class="contact-opt whatsapp-opt">
+                            <div class="copt-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </div>
+                            <div class="copt-info">
+                                <strong>WhatsApp</strong>
+                                <span>+56 9 3690 7136 · la forma más rápida</span>
+                            </div>
+                        </a>
+                        <a href="mailto:michael@wapnation.cl" class="contact-opt">
+                            <div class="copt-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="copt-info">
+                                <strong>Email</strong>
+                                <span>michael@wapnation.cl</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.cl" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">¿Qué necesitas?</label>
+                        <select id="service" name="service">
+                            <option value="">Elige una opción</option>
+                            <option value="landing">Landing page / sitio web</option>
+                            <option value="ai">Asistente IA / Alexa Skill</option>
+                            <option value="monitor">Monitor de licitaciones / datos públicos</option>
+                            <option value="trading">Bot de trading</option>
+                            <option value="pos">Punto de venta</option>
+                            <option value="api">API / automatización</option>
+                            <option value="otro">Otra cosa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Cuéntame</label>
+                        <textarea id="message" name="message" placeholder="Explícame tu proyecto o idea. Mientras más detalle, mejor puedo cotizar." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full" id="submit-btn">
+                        Enviar y continuar por WhatsApp
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                    <p class="form-note">Respondemos el mismo día. Si es urgente, escríbenos directo por WhatsApp.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="section cta-final">
+        <div class="container">
+            <div class="cta-final-inner">
+                <h2 class="cta-final-title">¿Listo para <span class="gradient-text">escalar</span> tu operación?</h2>
+                <p class="cta-final-sub">Agenda una llamada de 15 minutos sin compromiso. Te explicamos cómo podemos ayudarte.</p>
+                <div class="cta-final-actions">
+                    <a href="https://wa.me/56936907136" target="_blank" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Agendar por WhatsApp
+                    </a>
+                    <a href="mailto:michael@wapnation.cl" class="btn-ghost">Escribir un email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <path d="M4 12L10 28L16 18L20 28L26 18L30 28L36 12" stroke="url(#lg2)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs><linearGradient id="lg2" x1="4" y1="12" x2="36" y2="28"><stop offset="0%" stop-color="#00f0ff"/><stop offset="100%" stop-color="#7b2ff7"/></linearGradient></defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Wap<span class="logo-accent">Nation</span></span>
+                    </div>
+                    <p>Agencia de tecnología en Antofagasta, Chile.<br>Michael Cárdenas · <a href="mailto:michael@wapnation.cl">michael@wapnation.cl</a></p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#servicios">Servicios</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#sobre-mi">Nosotros</a>
+                    <a href="https://github.com/WAPNATION23" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 WapNation. Todos los derechos reservados.</span>
+                <div class="footer-graffiti">
+                    <svg viewBox="0 0 40 40" fill="none" width="32" height="32">
+                        <path d="M4.5 9.5 L12.5 29.5 L20.5 14.5 L28.5 29.5 L36.5 9.5" stroke="#0ff" stroke-width="2" stroke-linejoin="bevel" opacity="0.5"/>
+                        <path d="M3.2 10.8 L11.2 30.8 L19.2 15.8 L27.2 30.8 L35.2 10.8" stroke="#f0f" stroke-width="2" stroke-linejoin="bevel" opacity="0.5"/>
+                        <path d="M4 10 L12 30 L20 15 L28 30 L36 10" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Overlay Global para Modal -->
+    <div id="modal-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
